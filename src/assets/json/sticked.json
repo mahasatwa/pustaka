@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "title": "Kecakapan Antar Personal",
+        "price_old": "Rp90.000",
+        "price_new": "Rp75.000",
+        "image": "kecakapan_antar_personal.jpg",
+        "date": "25 Maret 2023"
+    },
+    {
+        "id": 2,
+        "title": "Mengubah Mind Set Berfikir Menjadi Sosok Yang Tangguh",
+        "price_old": "Rp100.000",
+        "price_new": "Rp85.000",
+        "image": "mengubah_mindset.jpg",
+        "date": "15 Januari 2023"
+    }
+]

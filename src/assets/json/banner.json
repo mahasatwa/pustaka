@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "title": "Diskon hingga 70%",
+        "subtitle": "Semua Buku Terbitan Dwimulya Pustaka",
+        "date": "15 - 31 Januari 2025",
+        "image": "banner_5.jpg",
+        "label": "Special Offer"
+    },
+    {
+        "id": 2,
+        "title": "Mengubah Mind Set Berfikir Menjadi Sosok Yang Tangguh",
+        "subtitle": "Buku karya Dr. Rachmat Maulana, M.Si. untuk meningkatkan pola pikir tangguh.",
+        "date": "15 Januari 2023",
+        "image": "banner_3.jpg",
+        "label": "Best Seller"
+    },
+    {
+        "id": 3,
+        "title": "Kuliah Sambil Kerja",
+        "subtitle": "Panduan cerdas untuk mahasiswa yang ingin mandiri finansial.",
+        "date": "10 Februari 2023",
+        "image": "banner_4.jpg",
+        "label": "Special Offer"
+    },
+    {
+        "id": 4,
+        "title": "Kecakapan Antar Personal",
+        "subtitle": "Wawasan penting tentang hubungan interpersonal.",
+        "date": "25 Maret 2023",
+        "image": "banner_2.jpg",
+        "label": "Limited Edition"
+    },
+    {
+        "id": 5,
+        "title": "Bunga Rampai Manajemen Kehidupan",
+        "subtitle": "Strategi manajemen untuk kehidupan yang lebih baik.",
+        "date": "5 April 2023",
+        "image": "banner_1.jpg",
+        "label": "New Arrival"
+    }
+]
