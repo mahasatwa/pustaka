@@ -73,7 +73,7 @@
 </template>
 
 <script>
-import books from "@/assets/json/newrelease.json";
+import books from "@/assets/json/books.json";
 
 export default {
     props: ["pretty_url"],
