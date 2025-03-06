@@ -74,8 +74,10 @@
 
 <script>
 import books from "@/assets/json/books.json";
+import { defineComponent } from 'vue';
+import { useMeta } from "vue-meta";
 
-export default {
+export default defineComponent({
     props: ["pretty_url"],
     data() {
         return {
@@ -91,20 +93,32 @@ export default {
         }
     },
     methods: {
-        loadBook() {
-            this.book = books.find(
-                (b) => b.pretty_url === this.$route.params.pretty_url
-            );
-        },
         resolveImage(imagePath) {
             try {
                 return require(`@/assets/img/books/${imagePath}`);
             } catch (e) {
                 return imagePath;
             }
+        },
+        loadBook() {
+            this.book = books.find(
+                (b) => b.pretty_url === this.$route.params.pretty_url
+            );
+            if (this.book) {
+                useMeta({
+                    title: this.book.title,
+                    meta: [
+                        { name: "description", content: this.book.description },
+                        { property: "og:title", content: this.book.title },
+                        { property: "og:description", content: this.book.description },
+                        { property: "og:image", content: this.resolveImage(this.book.image) },
+                        { property: "og:url", content: window.location.href }
+                    ]
+                });
+            }
         }
-    }
-};
+    },
+});
 </script>
 
 <style>
