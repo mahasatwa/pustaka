@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "@/components/HomePage.vue";
 import BookDetail from "@/components/BookDetail.vue";
+import AllReleases from "@/components/AllReleases.vue";
 
 const routes = [
     {
@@ -12,6 +13,12 @@ const routes = [
         path: "/book/:pretty_url",
         name: "BookDetail",
         component: BookDetail,
+        props: true
+    },
+    {
+        path: '/all-releases',
+        name: 'AllReleases',
+        component: AllReleases,
         props: true
     }
 ];

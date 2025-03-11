@@ -3,7 +3,7 @@
         <div class="m-container mx-auto">
             <div class="flex justify-between items-center mb-4">
                 <h2 class="text-2xl font-bold">Rilis Terbaru</h2>
-                <a href="#" class="text-blue-600 hover:underline text-sm">Lihat Semua</a>
+                <router-link to="/all-releases" class="text-blue-600 hover:underline text-sm">Lihat Semua</router-link>
             </div>
             <div class="flex gap-4">
                 <!-- Banner di sisi kiri -->
@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import books from "@/assets/json/newrelease.json";
+import books from '@/assets/json/newrelease.json';
 
 export default {
     name: "NewReleases",
