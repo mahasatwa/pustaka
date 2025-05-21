@@ -1,29 +1,45 @@
 <template>
-    <section class="py-8">
-        <div class="m-container mx-auto">
-            <div class="flex justify-between items-center mb-4">
-                <h2 class="text-2xl font-bold">Rilis Terbaru</h2>
-                <router-link to="/all-releases" class="text-blue-600 hover:underline text-sm">Lihat Semua</router-link>
+    <section class="py-8 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <!-- Header -->
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold text-gray-800">Rilis Terbaru</h2>
+                <router-link to="/all-releases"
+                    class="text-blue-600 hover:text-blue-800 hover:underline text-sm transition duration-200">
+                    Lihat Semua
+                </router-link>
             </div>
-            <div class="flex gap-4">
-                <!-- Banner di sisi kiri -->
-                <div class="w-1/4 bg-blue-50 p-4 rounded-lg">
-                    <h3 class="text-lg font-bold mb-2">Rilis Terbaru</h3>
-                    <img :src="imageAssetsResolver('rilis.jpg')" alt="Illustration" class="rounded-lg">
+
+            <!-- Konten Utama -->
+            <div class="flex flex-col lg:flex-row gap-6">
+                <!-- Banner Sisi Kiri -->
+                <div class="lg:w-1/4 w-full bg-blue-50 p-4 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-bold mb-3">Rilis Terbaru</h3>
+                    <img :src="imageAssetsResolver('rilis.jpg')" alt="Ilustrasi Rilis Terbaru"
+                        class="w-full h-auto object-cover rounded-lg transition-transform duration-300 hover:scale-105" />
                 </div>
+
                 <!-- Daftar Buku -->
-                <div class="flex-1 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                    <div v-for="book in books" :key="book.id" class="border rounded-lg overflow-hidden shadow-sm">
-                        <router-link :to="`/book/${book.pretty_url}`">
-                            <img :src="resolveImage(book.image)" :alt="book.title" class="w-full h-48 object-cover" />
-                            <div class="p-4">
-                                <h4 class="font-bold text-lg truncate">{{ book.title }}</h4>
-                                <p class="text-gray-600 text-sm mb-2">{{ book.author }}</p>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-red-600 font-bold">{{ book.price_new }}</span>
-                                    <span class="text-gray-500 line-through text-sm">{{ book.price_old }}</span>
+                <div class="flex-1 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                    <div v-for="book in books" :key="book.id"
+                        class="bg-white border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+                        <router-link :to="`/book/${book.pretty_url}`" class="block">
+                            <img :src="resolveImage(book.image)" :alt="book.title"
+                                class="w-full h-40 sm:h-48 object-cover transition-transform duration-300 hover:scale-105" />
+                            <div class="p-3 sm:p-4">
+                                <!-- Judul Buku -->
+                                <h4 class="font-bold text-base line-clamp-2 h-12">{{ book.title }}</h4>
+                                <!-- Penulis -->
+                                <p class="text-gray-600 text-xs sm:text-sm truncate my-1">{{ book.author }}</p>
+                                <!-- Harga -->
+                                <div class="flex items-center justify-between mt-2">
+                                    <span class="text-red-600 font-bold text-sm sm:text-base">{{ book.price_new
+                                        }}</span>
+                                    <span class="text-gray-400 line-through text-xs sm:text-sm">{{ book.price_old
+                                        }}</span>
                                 </div>
-                                <p class="text-sm text-red-600 font-bold">{{ book.discount }}</p>
+                                <!-- Diskon -->
+                                <p class="text-xs text-red-600 font-bold mt-1">{{ book.discount }}</p>
                             </div>
                         </router-link>
                     </div>
@@ -55,5 +71,11 @@ export default {
 </script>
 
 <style scoped>
-/* Tambahkan styling jika diperlukan */
+/* Line clamp untuk judul panjang */
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 </style>
