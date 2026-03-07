@@ -1,0 +1,5 @@
+{
+  "rootPath": "tina",
+  "mediaRoot": "public/assets/img/books",
+  "publicPath": "/assets/img/books"
+}

@@ -1,0 +1,37 @@
+name: Dwimulya Pustaka
+repo: https://github.com/USERNAME/pustaka
+base_url: https://pustaka.stiedwimulya.ac.id
+
+sections:
+  - type: document
+    path: src/assets/json/books.json
+    label: Books
+    templates:
+      - name: book
+        label: Book
+        fields:
+          - name: title
+            label: Title
+            type: text
+          - name: author
+            label: Author
+            type: text
+          - name: price_new
+            label: Price (New)
+            type: text
+          - name: price_old
+            label: Price (Old)
+            type: text
+          - name: image
+            label: Cover Image
+            type: image
+            path: src/assets/img/books
+          - name: description
+            label: Description
+            type: textarea
+          - name: isbn
+            label: ISBN
+            type: text
+          - name: pretty_url
+            label: URL Slug
+            type: slug
