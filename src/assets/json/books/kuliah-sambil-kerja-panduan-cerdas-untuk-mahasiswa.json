@@ -15,5 +15,7 @@
     "pages": 300,
     "dimensions": "14.8 x 21 cm",
     "weight": "0.40 kg",
-    "cover": "Soft Cover"
+    "cover": "Soft Cover",
+    "is_featured": true,
+    "featured_order": 11
 }

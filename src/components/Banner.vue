@@ -124,14 +124,22 @@
 
 <script>
 import sliders from "@/assets/json/banner.json";
-import promos from "@/assets/json/stacked.json";
+
+// Load all books and filter by is_stacked flag (Single Source of Truth)
+const booksContext = require.context('@/assets/json/books', false, /\.json$/);
+const allBooks = booksContext.keys().map(key => booksContext(key));
+
+// Filter stacked books and sort by stacked_priority
+const stackedBooks = allBooks
+  .filter(book => book.is_stacked === true)
+  .sort((a, b) => (a.stacked_priority || 999) - (b.stacked_priority || 999));
 
 export default {
     name: "BannerBlock",
     data() {
         return {
             sliders,
-            promos,
+            promos: stackedBooks,
             currentIndex: 0,
             intervalId: null,
             isTransitioning: false,

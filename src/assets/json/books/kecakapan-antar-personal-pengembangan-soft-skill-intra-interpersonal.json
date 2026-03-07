@@ -15,5 +15,7 @@
     "pages": 410,
     "dimensions": "15,5 x 24 cm",
     "weight": "0.45 kg",
-    "cover": "Soft Cover"
+    "cover": "Soft Cover",
+    "is_stacked": true,
+    "stacked_priority": 1
 }

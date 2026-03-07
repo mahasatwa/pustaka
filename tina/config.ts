@@ -113,6 +113,68 @@ export default defineConfig({
             name: 'discount',
             label: 'Discount',
           },
+          // Featured/Stacked flags (Single Source of Truth)
+          {
+            type: 'boolean',
+            name: 'is_featured',
+            label: 'Featured in New Releases',
+            description: 'Show this book in the New Releases section on homepage',
+          },
+          {
+            type: 'number',
+            name: 'featured_order',
+            label: 'Featured Order',
+            description: 'Display order in New Releases (lower = first)',
+          },
+          {
+            type: 'boolean',
+            name: 'is_stacked',
+            label: 'Featured in Stacked Section',
+            description: 'Show this book in the Stacked promo section',
+          },
+          {
+            type: 'number',
+            name: 'stacked_priority',
+            label: 'Stacked Priority',
+            description: 'Display priority in Stacked section (lower = higher priority)',
+          },
+        ],
+      },
+      {
+        name: 'banners',
+        label: 'Banners',
+        path: 'src/assets/json',
+        format: 'json',
+        filename: 'banner',
+        fields: [
+          {
+            type: 'string',
+            name: 'title',
+            label: 'Title',
+            required: true,
+          },
+          {
+            type: 'string',
+            name: 'subtitle',
+            label: 'Subtitle',
+            required: true,
+          },
+          {
+            type: 'string',
+            name: 'date',
+            label: 'Campaign Date',
+          },
+          {
+            type: 'string',
+            name: 'image',
+            label: 'Banner Image (filename in /banners/)',
+            required: true,
+          },
+          {
+            type: 'string',
+            name: 'label',
+            label: 'Label (e.g., Best Seller)',
+          },
         ],
       },
     ],

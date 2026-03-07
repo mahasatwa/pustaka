@@ -303,14 +303,21 @@
 </template>
 
 <script>
-import books from '@/assets/json/newrelease.json';
+// Load all books and filter by is_featured flag (Single Source of Truth)
+const booksContext = require.context('@/assets/json/books', false, /\.json$/);
+const allBooks = booksContext.keys().map(key => booksContext(key));
+
+// Filter featured books and sort by featured_order
+const featuredBooks = allBooks
+  .filter(book => book.is_featured === true)
+  .sort((a, b) => (a.featured_order || 999) - (b.featured_order || 999));
 
 export default {
   name: 'NewReleases',
-  
+
   data() {
     return {
-      books,
+      books: featuredBooks,
       isLoading: false,
     };
   },
