@@ -211,7 +211,6 @@
 </template>
 
 <script>
-import books from "@/assets/json/books.json";
 import { defineComponent } from "vue";
 import { useMeta } from "vue-meta";
 
@@ -220,16 +219,17 @@ export default defineComponent({
     data() {
         return {
             book: null,
+            allBooks: [] // Cache for all books (for related books)
         };
     },
     computed: {
         relatedBooks() {
             if (!this.book) return [];
-            // Get 5 related books from same category or author
-            return books
-                .filter(b => 
-                    b.id !== this.book.id && 
-                    (b.category === this.book.category || b.author === this.book.author)
+            // Get 5 related books from same author
+            return this.allBooks
+                .filter(b =>
+                    b.id !== this.book.id &&
+                    b.author === this.book.author
                 )
                 .slice(0, 5);
         }
@@ -279,22 +279,36 @@ export default defineComponent({
             console.log('Wishlist toggled:', this.book.id);
         },
         
-        loadBook() {
-            this.book = books.find((b) => b.pretty_url === this.$route.params.pretty_url);
-            
-            if (this.book) {
-                useMeta({
-                    title: `${this.book.title} - Dwimulya Pustaka`,
-                    meta: [
-                        { name: "description", content: this.book.description },
-                        { property: "og:title", content: this.book.title },
-                        { property: "og:description", content: this.book.description },
-                        { property: "og:image", content: this.resolveImage(this.book.image) },
-                        { property: "og:url", content: window.location.href },
-                        { property: "og:type", content: "book" },
-                        { name: "twitter:card", content: "summary_large_image" },
-                    ],
-                });
+        async loadBook() {
+            const slug = this.$route.params.pretty_url;
+            try {
+                // Dynamic import individual book file
+                const bookModule = await import(`@/assets/json/books/${slug}.json`);
+                this.book = bookModule.default;
+
+                // Load all books for related books (lazy)
+                if (this.allBooks.length === 0) {
+                    const booksContext = require.context('@/assets/json/books', false, /\.json$/);
+                    this.allBooks = booksContext.keys().map(key => booksContext(key));
+                }
+
+                if (this.book) {
+                    useMeta({
+                        title: `${this.book.title} - Dwimulya Pustaka`,
+                        meta: [
+                            { name: "description", content: this.book.description },
+                            { property: "og:title", content: this.book.title },
+                            { property: "og:description", content: this.book.description },
+                            { property: "og:image", content: this.resolveImage(this.book.image) },
+                            { property: "og:url", content: window.location.href },
+                            { property: "og:type", content: "book" },
+                            { name: "twitter:card", content: "summary_large_image" },
+                        ],
+                    });
+                }
+            } catch (e) {
+                console.error('Book not found:', slug, e);
+                this.book = null;
             }
         },
     },

@@ -1,0 +1,19 @@
+{
+    "id": 6,
+    "title": "Manajemen Ritel",
+    "author": "Dr. Rachmat Maulana., M.SI; Ela Susila., S.Pd., MM;penulis, Agus Gunawan., S.Akun., SM;penulis, Yayuk karliena., SE., MM;penulis, Tieta Oktaviani., SE., MM",
+    "pretty_url": "manajemen-ritel",
+    "price_new": "Rp99.000",
+    "price_old": "Rp118.800",
+    "discount": "20%",
+    "image": "manajemen_ritel.jpg",
+    "description": "buku ini di buat untuk pembaca memahami intelektual yang mendalam.dimulai dari pemahaman konsep dasar ritel,pembaca diajak bagai mana strategi manajemen produk dan pricing menjadi elemen penting dalam membengun bisnis",
+    "publisher": "Penerbit Dwimulya Pustaka",
+    "isbn": "-",
+    "language": "Indonesia",
+    "publication_date": "5 Februari 2025",
+    "pages": 363,
+    "dimensions": "15,5 x 24 cm",
+    "weight": "0.45 kg",
+    "cover": "Soft Cover"
+}

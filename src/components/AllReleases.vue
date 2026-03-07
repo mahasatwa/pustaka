@@ -203,7 +203,9 @@
 </template>
 
 <script>
-import books from '@/assets/json/books.json';
+// Load all books from individual JSON files using webpack require.context
+const booksContext = require.context('@/assets/json/books', false, /\.json$/);
+const allBooks = booksContext.keys().map(key => booksContext(key));
 
 export default {
     name: 'AllReleases',
@@ -322,7 +324,7 @@ export default {
     mounted() {
         // Simulate loading
         setTimeout(() => {
-            this.books = books;
+            this.books = allBooks;
             this.isLoading = false;
         }, 300);
     },

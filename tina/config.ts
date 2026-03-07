@@ -23,9 +23,9 @@ export default defineConfig({
       {
         name: 'books',
         label: 'Books',
-        path: 'src/assets/json',
+        path: 'src/assets/json/books',
         format: 'json',
-        filename: 'books',
+        uidFieldName: 'pretty_url',
         fields: [
           {
             type: 'string',
