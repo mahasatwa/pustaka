@@ -18,8 +18,6 @@ export default defineConfig({
     },
   },
 
-  // Enable Tina Cloud integration
-  contentApiUrl: process.env.TINA_CONTENT_API_URL || 'https://tina.io',
   schema: {
     collections: [
       {
