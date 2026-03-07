@@ -1,0 +1,11 @@
+[     755ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4001/admin/vite.svg:0
+[  393519ms] [WARNING] Failed to fetch PostHog config: Failed to fetch @ http://localhost:4001/admin/node_modules/.vite/deps/tinacms.js?v=7b7e2039:245407
+[  393519ms] [WARNING] PostHog API key not found. PostHog tracking will be disabled. @ http://localhost:4001/admin/node_modules/.vite/deps/tinacms.js?v=7b7e2039:245432
+[  487926ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[  488932ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[  489935ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[  490944ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[  491949ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[  492959ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[  493968ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[  497483ms] [ERROR] Failed to load assets @ http://localhost:4001/admin/:14

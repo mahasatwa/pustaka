@@ -282,15 +282,11 @@ export default defineComponent({
         async loadBook() {
             const slug = this.$route.params.pretty_url;
             try {
-                // Dynamic import individual book file
-                const bookModule = await import(`@/assets/json/books/${slug}.json`);
-                this.book = bookModule.default;
-
-                // Load all books for related books (lazy)
-                if (this.allBooks.length === 0) {
-                    const booksContext = require.context('@/assets/json/books', false, /\.json$/);
-                    this.allBooks = booksContext.keys().map(key => booksContext(key));
-                }
+                // Load all books and find by slug (more reliable than dynamic import)
+                const booksContext = require.context('@/assets/json/books', false, /\.json$/);
+                const allBooks = booksContext.keys().map(key => booksContext(key));
+                
+                this.book = allBooks.find(b => b.pretty_url === slug);
 
                 if (this.book) {
                     useMeta({
@@ -305,9 +301,11 @@ export default defineComponent({
                             { name: "twitter:card", content: "summary_large_image" },
                         ],
                     });
+                } else {
+                    console.error('Book not found:', slug);
                 }
             } catch (e) {
-                console.error('Book not found:', slug, e);
+                console.error('Error loading book:', slug, e);
                 this.book = null;
             }
         },

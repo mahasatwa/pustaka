@@ -1,0 +1,4 @@
+[ 1156053ms] [ERROR] WebSocket connection to 'ws://192.168.100.158:8080/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///./node_modules/webpack-dev-server/client/clients/WebSocketClient.js:48
+[ 1158108ms] [ERROR] WebSocket connection to 'ws://192.168.100.158:8080/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///./node_modules/webpack-dev-server/client/clients/WebSocketClient.js:48
+[ 1162179ms] [ERROR] WebSocket connection to 'ws://192.168.100.158:8080/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///./node_modules/webpack-dev-server/client/clients/WebSocketClient.js:48
+[ 1275527ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:8080/app.7c47dbdbab4a29a5.hot-update.json:0

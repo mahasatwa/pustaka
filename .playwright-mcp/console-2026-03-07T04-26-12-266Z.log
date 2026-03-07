@@ -1,0 +1,32 @@
+[ 1630153ms] [WARNING] Failed to fetch PostHog config: Failed to fetch @ http://localhost:4001/admin/node_modules/.vite/deps/tinacms.js?v=37bdabdc:245407
+[ 1630153ms] [WARNING] PostHog API key not found. PostHog tracking will be disabled. @ http://localhost:4001/admin/node_modules/.vite/deps/tinacms.js?v=37bdabdc:245432
+[ 1770650ms] [ERROR] TypeError: Failed to fetch
+    at LocalClient.request (http://localhost:4001/admin/node_modules/.vite/deps/tinacms.js?v=37bdabdc:321728:23)
+    at async TinaAdminApi.fetchCollection (http://localhost:4001/admin/node_modules/.vite/deps/tinacms.js?v=37bdabdc:266129:43)
+    at async fetchCollection (http://localhost:4001/admin/node_modules/.vite/deps/tinacms.js?v=37bdabdc:324500:31) @ http://localhost:4001/admin/node_modules/.vite/deps/tinacms.js?v=37bdabdc:324513
+[ 1806904ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[ 1807907ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[ 1808910ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[ 1809912ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[ 1810915ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[ 1811922ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[ 1815082ms] [ERROR] Failed to load assets @ http://localhost:4001/admin/:14
+[ 2074669ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[ 2075681ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[ 2076696ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[ 2077706ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[ 2078711ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[ 2079717ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[ 2080723ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[ 2081728ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[ 2082732ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[ 2083745ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[ 2084763ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[ 2085774ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[ 2086785ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[ 2087801ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[ 2088809ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[ 2089826ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[ 2090850ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[ 2091863ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/admin/:0
+[ 2095876ms] [ERROR] Failed to load assets @ http://localhost:4001/admin/:14

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="600" fill="#e5e7eb"/>
+  
+  <!-- Title text -->
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#374151" text-anchor="middle" dominant-baseline="middle">
+    DARI
+DESA
+UNTUK
+  </text>
+  
+  <!-- Author -->
+  <text x="200" y="340" font-family="Arial, sans-serif" font-size="14" fill="#6b7280" text-anchor="middle">
+    Dr. Rachmat Maulana, M.Si.
+  </text>
+  
+  <!-- Publisher -->
+  <text x="200" y="550" font-family="Arial, sans-serif" font-size="12" fill="#9ca3af" text-anchor="middle">
+    Penerbit Dwimulya Pustaka
+  </text>
+  
+  <!-- Placeholder label -->
+  <rect x="10" y="10" width="100" height="30" fill="#fbbf24" rx="5"/>
+  <text x="60" y="30" font-family="Arial, sans-serif" font-size="10" fill="#78350f" text-anchor="middle" dominant-baseline="middle">
+    PLACEHOLDER
+  </text>
+</svg>
