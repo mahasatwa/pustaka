@@ -2,3 +2,36 @@
 [ 1158108ms] [ERROR] WebSocket connection to 'ws://192.168.100.158:8080/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///./node_modules/webpack-dev-server/client/clients/WebSocketClient.js:48
 [ 1162179ms] [ERROR] WebSocket connection to 'ws://192.168.100.158:8080/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ webpack-internal:///./node_modules/webpack-dev-server/client/clients/WebSocketClient.js:48
 [ 1275527ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:8080/app.7c47dbdbab4a29a5.hot-update.json:0
+[ 4472573ms] [ERROR] Image not found: 09-210-ebook-tiga-kuasa-dalam-kehidupan.jpg Error: Cannot find module './09-210-ebook-tiga-kuasa-dalam-kehidupan.jpg'
+    at webpackContextResolve (http://localhost:8080/src_assets_img_books_sync_recursive_-src_assets_json_books_sync_json_.1e635cdb8e885009.hot-update.js:117:11)
+    at webpackContext (http://localhost:8080/src_assets_img_books_sync_recursive_-src_assets_json_books_sync_json_.1e635cdb8e885009.hot-update.js:112:11)
+    at Proxy.resolveImage (webpack-internal:///./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/AllReleases.vue?vue&type=script&lang=js:90:87)
+    at eval (webpack-internal:///./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/AllReleases.vue?vue&type=template&id=7cebf58d&scoped=true:194:23)
+    at Proxy.renderFnWithContext (webpack-internal:///./node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js:867:13)
+    at Proxy.eval (webpack-internal:///./node_modules/vue-router/dist/vue-router.mjs:1107:72)
+    at renderComponentRoot (webpack-internal:///./node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js:4341:38)
+    at ReactiveEffect.componentUpdateFn [as fn] (webpack-internal:///./node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js:5649:46)
+    at ReactiveEffect.run (webpack-internal:///./node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js:337:19)
+    at setupRenderEffect (webpack-internal:///./node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js:5770:5) @ webpack-internal:///./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/AllReleases.vue?vue&type=script&lang=js:91
+[ 4472580ms] [ERROR] Image not found: 09-211-ebook-saatnya-untuk-berubah.jpg Error: Cannot find module './09-211-ebook-saatnya-untuk-berubah.jpg'
+    at webpackContextResolve (http://localhost:8080/src_assets_img_books_sync_recursive_-src_assets_json_books_sync_json_.1e635cdb8e885009.hot-update.js:117:11)
+    at webpackContext (http://localhost:8080/src_assets_img_books_sync_recursive_-src_assets_json_books_sync_json_.1e635cdb8e885009.hot-update.js:112:11)
+    at Proxy.resolveImage (webpack-internal:///./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/AllReleases.vue?vue&type=script&lang=js:90:87)
+    at eval (webpack-internal:///./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/AllReleases.vue?vue&type=template&id=7cebf58d&scoped=true:194:23)
+    at Proxy.renderFnWithContext (webpack-internal:///./node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js:867:13)
+    at Proxy.eval (webpack-internal:///./node_modules/vue-router/dist/vue-router.mjs:1107:72)
+    at renderComponentRoot (webpack-internal:///./node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js:4341:38)
+    at ReactiveEffect.componentUpdateFn [as fn] (webpack-internal:///./node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js:5649:46)
+    at ReactiveEffect.run (webpack-internal:///./node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js:337:19)
+    at setupRenderEffect (webpack-internal:///./node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js:5770:5) @ webpack-internal:///./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/AllReleases.vue?vue&type=script&lang=js:91
+[ 4472581ms] [ERROR] Image not found: 11-85-ebook-berdamai-dengan-keadaan.jpg Error: Cannot find module './11-85-ebook-berdamai-dengan-keadaan.jpg'
+    at webpackContextResolve (http://localhost:8080/src_assets_img_books_sync_recursive_-src_assets_json_books_sync_json_.1e635cdb8e885009.hot-update.js:117:11)
+    at webpackContext (http://localhost:8080/src_assets_img_books_sync_recursive_-src_assets_json_books_sync_json_.1e635cdb8e885009.hot-update.js:112:11)
+    at Proxy.resolveImage (webpack-internal:///./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/AllReleases.vue?vue&type=script&lang=js:90:87)
+    at eval (webpack-internal:///./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/AllReleases.vue?vue&type=template&id=7cebf58d&scoped=true:194:23)
+    at Proxy.renderFnWithContext (webpack-internal:///./node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js:867:13)
+    at Proxy.eval (webpack-internal:///./node_modules/vue-router/dist/vue-router.mjs:1107:72)
+    at renderComponentRoot (webpack-internal:///./node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js:4341:38)
+    at ReactiveEffect.componentUpdateFn [as fn] (webpack-internal:///./node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js:5649:46)
+    at ReactiveEffect.run (webpack-internal:///./node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js:337:19)
+    at setupRenderEffect (webpack-internal:///./node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js:5770:5) @ webpack-internal:///./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/AllReleases.vue?vue&type=script&lang=js:91
