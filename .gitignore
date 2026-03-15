@@ -9,3 +9,21 @@ tina/__generated__
 
 # Keep admin folder for TinaCMS static build
 # !admin/
+
+buku/
+# Python scripts
+*.py
+
+# Markdown documentation (except README)
+*.md
+!README.md
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Editor
+.vscode/
+.idea/
